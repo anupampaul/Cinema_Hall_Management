@@ -59,7 +59,7 @@ HALL: {self.hall_no}
         print('*' * 80)
 
     def view_show_list(self):
-        print('*' * 150)
+        print('*' * 80)
         for show in self.__show_list:
             print(
                 f''' MOVIE NAME: {show[1]}\t\t  TIME: {show[2]} \t\t SHOW ID: {show[0]}'''
@@ -75,7 +75,7 @@ HALL: {self.hall_no}
             f"\n\nMOVIE NAME: {self.__show_list[showId][1]} \t\t MOVIE TIME: {self.__show_list[showId][2]}"
         )
         print('X for already booked seats')
-        print('_' * 80)
+        print('*' * 80)
         for row in self.__seats[showId]:
             for seat in row:
 
@@ -84,7 +84,7 @@ HALL: {self.hall_no}
                 else:
                     print(seat, end='\t')
             print()
-        print('_' * 150)
+        print('*' * 80)
 
 
 hall = Hall(5, 2, 'A0')
