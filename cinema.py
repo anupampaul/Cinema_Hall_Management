@@ -49,14 +49,14 @@ class Hall(Star_Cinema):
             booked_list.append(f'{chr(ord("@")+(seat[0]+1))}{seat[1]}')
 
         print("\t\t####TICKET BOOKED SUCCESSFULLY!!####")
-        print('*' * 150)
+        print('*' * 80)
         print(f"""NAME: {name}
 PHONE NUMBER: {phoneNumber}
 MOVIE NAME: {self.__show_list[showId][1]} \t\t MOVIE TIME: {self.__show_list[showId][2]}
 TICKETS NUMBERS : { " ".join(booked_list)}
 HALL: {self.hall_no}
         """)
-        print('*' * 150)
+        print('*' * 80)
 
     def view_show_list(self):
         print('*' * 150)
@@ -64,7 +64,7 @@ HALL: {self.hall_no}
             print(
                 f''' MOVIE NAME: {show[1]}\t\t  TIME: {show[2]} \t\t SHOW ID: {show[0]}'''
             )
-        print('*' * 150)
+        print('*' * 80)
 
     def view_available_seats(self, showId):
 
@@ -75,7 +75,7 @@ HALL: {self.hall_no}
             f"\n\nMOVIE NAME: {self.__show_list[showId][1]} \t\t MOVIE TIME: {self.__show_list[showId][2]}"
         )
         print('X for already booked seats')
-        print('_' * 150)
+        print('_' * 80)
         for row in self.__seats[showId]:
             for seat in row:
 
